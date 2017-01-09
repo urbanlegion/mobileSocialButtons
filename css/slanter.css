@@ -1,0 +1,111 @@
+body{background-color: black}
+.super_awesome{
+    font-size: 100px;
+    position: absolute;
+    color: white;
+    z-index:5;
+    left:240px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.go_neon_blue{
+    -webkit-animation: neon1 0.9s ease-in-out infinite alternate;
+    -moz-animation: neon1 0.9s ease-in-out infinite alternate;
+    animation: neon1 0.9s ease-in-out infinite alternate;
+}
+.go_neon_yellow{
+    -webkit-animation: neon3 0.9s ease-in-out infinite alternate;
+    -moz-animation: neon3 0.9s ease-in-out infinite alternate;
+    animation: neon3 0.9s ease-in-out infinite alternate;
+}
+.go_neon_red{
+    -webkit-animation: neon2 0.9s ease-in-out infinite alternate;
+    -moz-animation: neon2 0.9s ease-in-out infinite alternate;
+    animation: neon2 0.9s ease-in-out infinite alternate;
+}
+.slanted{
+    height: 400px;
+    width: 538px;
+}
+
+#master_slanter{
+
+}
+#slanted_left{
+    left:0;
+    position: absolute;
+    display: inline-block;
+background-color: #fffc00;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+#slanted_center{
+    z-index: 3;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+background-color: #3b5998;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+#slanted_right{
+    right: 0;
+    position: absolute;
+    display: inline-block;
+background-color: #cb2027;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+/*#slanted_right:hover {
+    animation-duration: 3s;
+    animation-name: goLeft;
+}
+#slanted_center:hover {
+    animation-duration: 3s;
+    animation-name: goLeft;
+}*/
+
+.widen{
+    animation-duration: 2.2s;
+    animation-name: wider;
+}
+
+@keyframes wider {
+    from {
+
+
+        width: 400px;
+    }
+
+    to {
+
+        width: 800px;
+    }
+}
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #000000, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #000000 0 0 20px #228DFF, 0 0 35px #000000, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}
+@-webkit-keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #62c3c6, 0 0 30px #000000, 0 0 40px #FF1177, 0 0 70px #000000, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #000000, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
+@-webkit-keyframes neon3 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #000000, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #000000, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+    }
+}
