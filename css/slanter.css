@@ -29,10 +29,12 @@ body{background-color: black}
     width: 538px;
 }
 
-#master_slanter{
-
+#master_slanter i{
+    left: 50%;
+    transform: translateX(-50%);
 }
 #slanted_left{
+    width: 40%;
     left:0;
     position: absolute;
     display: inline-block;
@@ -41,6 +43,7 @@ background-color: #fffc00;
     clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
 #slanted_center{
+    width: 40%;
     z-index: 3;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -52,6 +55,7 @@ background-color: #3b5998;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 #slanted_right{
+    width: 40%;
     right: 0;
     position: absolute;
     display: inline-block;
@@ -95,17 +99,17 @@ background-color: #cb2027;
 }
 @-webkit-keyframes neon2 {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #62c3c6, 0 0 30px #000000, 0 0 40px #FF1177, 0 0 70px #000000, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+        text-shadow: 0 0 10px #eb4057, 0 0 20px #009397, 0 0 30px #000000, 0 0 40px #FF1177, 0 0 70px #000000, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
     }
     to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #000000, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+        text-shadow: 0 0 5px #eb4057, 0 0 10px #009397, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #000000, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
     }
 }
 @-webkit-keyframes neon3 {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #000000, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+        text-shadow: 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #999800, 0 0 40px #FFDD1B, 0 0 70px #000000, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
     }
     to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #000000, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+        text-shadow: 0 0 5px #fff, 0 0 10px #000000, 0 0 15px #999800, 0 0 20px #FFDD1B, 0 0 35px #000000, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
     }
 }

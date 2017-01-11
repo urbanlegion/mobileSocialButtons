@@ -11,6 +11,30 @@ $(document).ready(function (e) {
     });*/
     $(this).on('click', function (e) {
         console.log('e.target.id: '+ e.target.id );
+        $('.fa-snapchat-ghost').animate({
+           left: '39%'
+
+        },1200, function () {
+            $(this).addClass('go_neon_yellow')
+        });
+        $('.fa-facebook-f').animate({
+
+
+        },1200, function () {
+            $(this).addClass('go_neon_blue')
+        });
+        $('.fa-instagram').animate({
+           right: '39%'
+
+        },1200, function () {
+            $(this).addClass('go_neon_red')
+        });
+
+
+
+
+
+/*
         if(e.target.id == 'slanted_center'){
             $('.slanted').animate({
                 width: 510
@@ -28,7 +52,7 @@ $(document).ready(function (e) {
                 });
             });
 
-        }
+        }*/
        /* if(e.target.id == 'slanted_center'){
             console.log('asdasd');
             $('#slanted_center').animate({
